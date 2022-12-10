@@ -32,6 +32,11 @@ public class LoginUserTest {
         token = responseRegister.extract().path("accessToken");
     }
 
+    @After
+    public void tearDown(){
+        ValidatableResponse responseDelete = UserClient.deleteUser(token);
+    }
+
     @Test
     @DisplayName("Логин пользователя с валидными данными")
     public void loginUserWithValidData() {
@@ -56,10 +61,5 @@ public class LoginUserTest {
 
         Assert.assertEquals("Ошибка в коде или теле ответа", List.of(SC_UNAUTHORIZED, false),
                 List.of(statusCode, isLoggedIn));
-    }
-
-    @After
-    public void tearDown(){
-        ValidatableResponse responseDelete = UserClient.deleteUser(token);
     }
 }

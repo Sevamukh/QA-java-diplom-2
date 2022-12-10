@@ -32,6 +32,11 @@ public class GetUserOrdersTest {
         ValidatableResponse responseCreateOrder = OrderClient.createOrder(createOrderData, token);
     }
 
+    @AfterClass
+    public static void tearDown() {
+        ValidatableResponse responseDelete = UserClient.deleteUser(token);
+    }
+
     @Test
     @DisplayName("Получение заказов конкретного авторизованного пользователя")
     public void getAuthorizedUserOrders() {
@@ -53,10 +58,5 @@ public class GetUserOrdersTest {
 
         Assert.assertEquals("Ошибка в коде или теле ответа", List.of(SC_UNAUTHORIZED, false),
                 List.of(statusCode, isGot));
-    }
-
-    @AfterClass
-    public static void tearDown() {
-        ValidatableResponse responseDelete = UserClient.deleteUser(token);
     }
 }

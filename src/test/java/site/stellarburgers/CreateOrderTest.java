@@ -32,6 +32,11 @@ public class CreateOrderTest {
         token = responseRegister.extract().path("accessToken");
     }
 
+    @AfterClass
+    public static void afterAll(){
+        ValidatableResponse responseDelete = UserClient.deleteUser(token);
+    }
+
     @Test
     @Parameters(method = "createOrderParameters")
     @TestCaseName("Создание заказа с авторизацией ({0}) и непустым ({1}) корректным ({2}) списком ингредиентов")
@@ -65,10 +70,5 @@ public class CreateOrderTest {
                 {true, false, true, SC_BAD_REQUEST},
                 {false, true, true, SC_OK},
         };
-    }
-
-    @AfterClass
-    public static void afterAll(){
-        ValidatableResponse responseDelete = UserClient.deleteUser(token);
     }
 }

@@ -33,6 +33,11 @@ public class UpdateUserTest {
         token = responseRegister.extract().path("accessToken");
     }
 
+    @After
+    public void tearDown(){
+        ValidatableResponse responseDelete = UserClient.deleteUser(token);
+    }
+
     @Test
     @Parameters(method = "updateUserWithAuthorizationParameters")
     @TestCaseName("Изменение данных пользователя с авторизацией: {0}")
@@ -52,10 +57,5 @@ public class UpdateUserTest {
                 {true, SC_OK},
                 {false, SC_UNAUTHORIZED},
         };
-    }
-
-    @After
-    public void tearDown(){
-        ValidatableResponse responseDelete = UserClient.deleteUser(token);
     }
 }
