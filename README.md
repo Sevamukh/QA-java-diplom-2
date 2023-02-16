@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <section class="theory-viewer__block theory-viewer__block_type_markdown">
 <div class="Markdown base-markdown base-markdown_with-gallery markdown markdown_size_normal markdown_type_theory full-markdown">
 <h1 style="text-align: center;">Тестирование API</h1>
@@ -6,7 +5,7 @@
 </section>
 <section class="theory-viewer__block theory-viewer__block_type_markdown">
 <div class="Markdown base-markdown base-markdown_with-gallery markdown markdown_size_normal markdown_type_theory full-markdown">
-<div class="paragraph">Здесь представлен мой дипломный проект по тестированию API по курсу "<span>Автоматизатор тестирования на Java</span> Яндекс Практикума". Цель: протестировать определенные ручки API для сайта&nbsp;<a href="https://stellarburgers.nomoreparties.site/" target="_blank" rel="noopener">Stellar Burgers</a>, с помощью&nbsp;<a href="https://code.s3.yandex.net/qa-automation-engineer/java/cheatsheets/paid-track/diplom/api-documentation.pdf" target="_blank" rel="noopener">документации API</a>.</div>
+<div class="paragraph">Здесь представлен мой дипломный проект по тестированию API по курсу "Автоматизатор тестирования на Java" Яндекс Практикума. Цель: протестировать определенные ручки API для сайта&nbsp;<a href="https://stellarburgers.nomoreparties.site/" target="_blank" rel="noopener">Stellar Burgers</a>&nbsp;с помощью&nbsp;<a href="https://code.s3.yandex.net/qa-automation-engineer/java/cheatsheets/paid-track/diplom/api-documentation.pdf" target="_blank" rel="noopener">документации API</a>.</div>
 <div class="paragraph"><strong>Создание пользователя:</strong></div>
 <ul>
 <li>создать уникального пользователя;</li>
@@ -23,7 +22,7 @@
 <li>с авторизацией;</li>
 <li>без авторизации.</li>
 </ul>
-<div class="paragraph">Для обеих ситуаций нужно проверить, что любое поле можно изменить. Для неавторизованного пользователя &mdash; ещё и то, что система вернёт ошибку.</div>
+<div class="paragraph">Для обеих проверено, что любое поле можно изменить. Для неавторизованного пользователя &mdash; также, что система вернёт ошибку.</div>
 <div class="paragraph"><strong>Создание заказа:</strong></div>
 <ul>
 <li>с авторизацией;</li>
