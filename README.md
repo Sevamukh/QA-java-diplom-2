@@ -5,7 +5,7 @@
 </section>
 <section class="theory-viewer__block theory-viewer__block_type_markdown">
 <div class="Markdown base-markdown base-markdown_with-gallery markdown markdown_size_normal markdown_type_theory full-markdown">
-<div class="paragraph">Здесь представлен мой дипломный проект по тестированию API по курсу "Автоматизатор тестирования на Java" Яндекс Практикума. Цель: протестировать определенные ручки API для сайта&nbsp;<a href="https://stellarburgers.nomoreparties.site/" target="_blank" rel="noopener">Stellar Burgers</a>&nbsp;с помощью&nbsp;<a href="https://code.s3.yandex.net/qa-automation-engineer/java/cheatsheets/paid-track/diplom/api-documentation.pdf" target="_blank" rel="noopener">документации API</a>.</div>
+<div class="paragraph">Здесь представлен мой дипломный проект по тестированию API по курсу "Автоматизатор тестирования на Java" Яндекс Практикума. Цель: протестировать определенные ручки API для сайта&nbsp;<a href="https://stellarburgers.nomoreparties.site/" target="_blank" rel="noopener">Stellar Burgers</a>&nbsp;с помощью&nbsp;<a href="https://code.s3.yandex.net/qa-automation-engineer/java/cheatsheets/paid-track/diplom/api-documentation.pdf" target="_blank" rel="noopener">документации API</a>. Стэк: Java 8 + Maven + JUnit 4 + RestAssured + Allure.</div>
 <div class="paragraph"><strong>Создание пользователя:</strong></div>
 <ul>
 <li>создать уникального пользователя;</li>
